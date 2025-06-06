@@ -1,0 +1,82 @@
+.page {
+    height: 100%;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+img.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.logo-name {
+    font-family: inter;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 59px;
+}
+
+.header-center {
+    font-family: inter;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.header-right {
+    display: flex;
+    gap: 59px;
+}
+
+.right-image-icons {
+    width: 26px;
+    height: 26px;
+}
+
+.body {
+    padding-bottom: 33px;
+    display: flex;
+}
+
+.content {
+    // width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 118px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.sub-title {
+    font-size: 23px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.card {
+    // max-width: 20%;
+    border: solid 1px #FFFFFF;
+}

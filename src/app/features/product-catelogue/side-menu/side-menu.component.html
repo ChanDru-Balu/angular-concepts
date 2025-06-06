@@ -1,0 +1,71 @@
+<div class="accordion">
+
+
+    <mat-accordion>
+
+        <mat-expansion-panel *ngFor="let cat of cat.productLines;trackBy: trackById" mat-expansion-panel
+            (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title> {{cat.name}} </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div *ngIf="cat.categories">
+                <mat-expansion-panel *ngFor="let subCat of cat.categories" mat-expansion-panel
+                    (opened)="subCategoryOpen = true" (closed)="subCategoryOpen = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> {{subCat.name}} </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div *ngIf="subCat.subCategories">
+                        <mat-panel-title class="cat-name"
+                            [ngClass]="{ 'selected-category': (selectedCategory == newCat) }"
+                            *ngFor="let newCat of subCat.subCategories" (click)="subCategorySelected(newCat)">
+                            {{newCat.name}} </mat-panel-title>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+                <mat-panel-title (click)="viewAll(cat)" > View All </mat-panel-title>
+
+        </mat-expansion-panel>
+
+    </mat-accordion>
+
+</div>
+
+<div class="filter">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+        <mat-tab label="Imperial">Imperial</mat-tab>
+        <mat-tab label="Metre">
+
+            <div *ngFor="let filter of filters">
+
+                <div class="height" *ngIf="filter.type == 'range'">
+                    <div class="filter-title">{{filter.label}}</div>
+                    <span class="value">{{ filter.min }} {{filter.unit}}</span>
+                    <mat-slider [min]="filter.min" [max]="filter.max" (change)="onRangeChange(filter , startInput.value , endInput.value)" >
+                        <input #startInput [value]="filter.range?.start" matSliderStartThumb>
+                        <input #endInput [value]="filter.range?.end" matSliderEndThumb>
+                    </mat-slider>
+                    <span class="value">{{ filter.max }} {{filter.unit}}</span>
+                </div>
+
+                <div class="environment" *ngIf="filter.type == 'checkbox'">
+                    <div class="environment-title">{{filter.label}}</div>
+                    <section class="example-section"  >
+                        <mat-checkbox *ngFor="let option of filter.options" (change)="onOptionSelected(filter , option , $event)"
+                            >{{option}}</mat-checkbox>
+                    </section>
+                </div>
+
+            </div>
+
+
+        </mat-tab>
+    </mat-tab-group>
+
+    <div class="buttons">
+        <button class="clear-all" (click)="clearAllFilter()" >Clear All</button>
+        <button class="apply-filter" (click)="applyFilter()" >Apply Filter</button>
+    </div>
+
+
+</div>

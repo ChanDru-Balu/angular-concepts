@@ -1,0 +1,31 @@
+<div class="title">{{products.name  }} <span> ( {{products.products.length}} Types Available) </span></div>
+
+<div class="product" *ngFor="let product of paginatedProducts">
+    <div class="product-details">
+        <div class="image">
+            <img src="assets/images/product-catalog-image1.png" alt="" class="product-image">
+        </div>
+        <div class="details">
+            <div class="header">
+                <div class="subtitle fs-12 secondary ">Cat Code: {{product.id}}</div>
+                <div class="title fs-18 black-cl ">{{product.name}}</div>
+            </div>
+            <div class="metrics">
+                <div class="key">Platform size: 64"X20*</div>
+                <div class="key">Weight: 36kg</div>
+                <div class="key">Power Source : {{product.productFilters?.fuelType}}</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="buttons">
+        <button class="add-button">Add to Cart</button>
+        <button class="view-button">View Details</button>
+    </div>
+</div>
+
+<mat-paginator #paginator [length]="products.products.length"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>

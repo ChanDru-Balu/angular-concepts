@@ -1,0 +1,19 @@
+<h1 style="text-align: center;" >View Child</h1>
+
+<p #singleRef >singleRef</p>
+
+
+<h1 style="text-align: center;" >View Children</h1>
+
+<p #templateRef >templateref works!</p>
+<h3 #templateRef >For second template reference!</h3>
+<h4 #templateRef >For Extra</h4>
+
+
+<h1 style="text-align: center;" >Child Component</h1>
+
+<!-- <p>{{ccref?.counter}}</p> -->
+<app-child-templateref #childComponentRef ></app-child-templateref>
+
+<button (click)="inc()" >Increment</button>
+<button (click)="dec()" >Decrement</button>

@@ -1,0 +1,17 @@
+<p>product-catelogue works!</p>
+
+<div class="catelogue-page">
+
+    <div class="side-menu-details">
+        @if (cat) {
+            <app-side-menu [cat]="cat" (updateCategory)="recentlySelectedCategoty($event)" ></app-side-menu>
+        }
+    </div>
+
+    <div class="product-page-details">
+        @if (productsLists) {
+            <app-product [products]="productsLists" ></app-product>
+        }
+    </div>
+
+</div>

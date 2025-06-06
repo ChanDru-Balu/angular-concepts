@@ -1,0 +1,534 @@
+{
+  "productLines": [
+    {
+      "name": "Aerial Work Platforms",
+      "categories": [
+        {
+          "name": "Scissor Lift",
+          "subCategories": [
+            {
+              "name": "Electric Scissor Lifts",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Working Height",
+                  "unit": "m",
+                  "min": 0,
+                  "max": 70
+                },
+                {
+                  "type": "range",
+                  "label": "Outreach",
+                  "unit": "m",
+                  "min": 5,
+                  "max": 30
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Environment",
+                  "options": [
+                    "Indoor",
+                    "Outdoor"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Electric",
+                    "Diesel",
+                    "Petrol"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "ESL-101",
+                  "name": "JLG ES1932 Electric Scissor Lift",
+                  "productFilters": {
+                    "workingHeight": 7.72,
+                    "outreach": 0,
+                    "environment": "Indoor",
+                    "fuelType": "Electric"
+                  }
+                },
+                {
+                  "id": "ESL-102",
+                  "name": "Genie GS-1930 Scissor Lift",
+                  "productFilters": {
+                    "workingHeight": 7.79,
+                    "outreach": 0,
+                    "environment": "Indoor",
+                    "fuelType": "Electric"
+                  }
+                },
+                {
+                  "id": "ESL-103",
+                  "name": "Skyjack SJIII 3219",
+                  "productFilters": {
+                    "workingHeight": 7.8,
+                    "outreach": 0,
+                    "environment": "Indoor",
+                    "fuelType": "Electric"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rough Terrain Scissor Lifts",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Working Height",
+                  "unit": "m",
+                  "min": 0,
+                  "max": 100
+                },
+                {
+                  "type": "range",
+                  "label": "Outreach",
+                  "unit": "m",
+                  "min": 5,
+                  "max": 40
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Environment",
+                  "options": [
+                    "Indoor",
+                    "Outdoor"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Diesel",
+                    "Electric"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "RTSL-201",
+                  "name": "Genie GS-5390 RT",
+                  "productFilters": {
+                    "workingHeight": 18.15,
+                    "outreach": 1.5,
+                    "environment": "Outdoor",
+                    "fuelType": "Diesel"
+                  }
+                },
+                {
+                  "id": "RTSL-202",
+                  "name": "JLG 530LRT Rough Terrain Scissor Lift",
+                  "productFilters": {
+                    "workingHeight": 18.15,
+                    "outreach": 1.2,
+                    "environment": "Outdoor",
+                    "fuelType": "Diesel"
+                  }
+                },
+                {
+                  "id": "RTSL-203",
+                  "name": "Skyjack SJ9250 RT",
+                  "productFilters": {
+                    "workingHeight": 17.2,
+                    "outreach": 1.3,
+                    "environment": "Outdoor",
+                    "fuelType": "Diesel"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scissor Lift 2",
+          "subCategories": [
+            {
+              "name": "Electric Scissor Lifts",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Working Height",
+                  "unit": "m",
+                  "min": 0,
+                  "max": 70
+                },
+                {
+                  "type": "range",
+                  "label": "Outreach",
+                  "unit": "m",
+                  "min": 5,
+                  "max": 30
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Environment",
+                  "options": [
+                    "Indoor",
+                    "Outdoor"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Electric",
+                    "Diesel",
+                    "Petrol"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "ESL-101",
+                  "name": "JLG ES1932 Electric Scissor Lift",
+                  "productFilters": {
+                    "workingHeight": 7.72,
+                    "outreach": 0,
+                    "environment": "Indoor",
+                    "fuelType": "Electric"
+                  }
+                },
+                {
+                  "id": "ESL-102",
+                  "name": "Genie GS-1930 Scissor Lift",
+                  "productFilters": {
+                    "workingHeight": 7.79,
+                    "outreach": 0,
+                    "environment": "Indoor",
+                    "fuelType": "Electric"
+                  }
+                },
+                {
+                  "id": "ESL-103",
+                  "name": "Skyjack SJIII 3219",
+                  "productFilters": {
+                    "workingHeight": 7.8,
+                    "outreach": 0,
+                    "environment": "Indoor",
+                    "fuelType": "Electric"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rough Terrain Scissor Lifts",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Working Height",
+                  "unit": "m",
+                  "min": 0,
+                  "max": 100
+                },
+                {
+                  "type": "range",
+                  "label": "Outreach",
+                  "unit": "m",
+                  "min": 5,
+                  "max": 40
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Environment",
+                  "options": [
+                    "Indoor",
+                    "Outdoor"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Diesel",
+                    "Electric"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "RTSL-201",
+                  "name": "Genie GS-5390 RT",
+                  "productFilters": {
+                    "workingHeight": 18.15,
+                    "outreach": 1.5,
+                    "environment": "Outdoor",
+                    "fuelType": "Diesel"
+                  }
+                },
+                {
+                  "id": "RTSL-202",
+                  "name": "JLG 530LRT Rough Terrain Scissor Lift",
+                  "productFilters": {
+                    "workingHeight": 18.15,
+                    "outreach": 1.2,
+                    "environment": "Outdoor",
+                    "fuelType": "Diesel"
+                  }
+                },
+                {
+                  "id": "RTSL-203",
+                  "name": "Skyjack SJ9250 RT",
+                  "productFilters": {
+                    "workingHeight": 17.2,
+                    "outreach": 1.3,
+                    "environment": "Outdoor",
+                    "fuelType": "Diesel"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Material Handling Equipment",
+      "categories": [
+        {
+          "name": "Forklifts",
+          "subCategories": [
+            {
+              "name": "Electric Forklifts",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Lifting Capacity",
+                  "unit": "ton",
+                  "min": 1,
+                  "max": 10
+                },
+                {
+                  "type": "range",
+                  "label": "Lift Height",
+                  "unit": "m",
+                  "min": 2,
+                  "max": 8
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Tire Type",
+                  "options": [
+                    "Pneumatic",
+                    "Cushion"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Electric"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "EFK-301",
+                  "name": "Toyota 8FBE20U Electric Forklift",
+                  "productFilters": {
+                    "liftingCapacity": 2,
+                    "liftHeight": 6.5,
+                    "tireType": "Cushion",
+                    "fuelType": "Electric"
+                  }
+                },
+                {
+                  "id": "EFK-302",
+                  "name": "Hyster J30XNT Electric Forklift",
+                  "productFilters": {
+                    "liftingCapacity": 1.36,
+                    "liftHeight": 5.5,
+                    "tireType": "Pneumatic",
+                    "fuelType": "Electric"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Diesel Forklifts",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Lifting Capacity",
+                  "unit": "ton",
+                  "min": 3,
+                  "max": 25
+                },
+                {
+                  "type": "range",
+                  "label": "Lift Height",
+                  "unit": "m",
+                  "min": 3,
+                  "max": 10
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Tire Type",
+                  "options": [
+                    "Pneumatic",
+                    "Solid"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Diesel"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "DFK-401",
+                  "name": "Caterpillar DP70N Diesel Forklift",
+                  "productFilters": {
+                    "liftingCapacity": 7,
+                    "liftHeight": 6.2,
+                    "tireType": "Pneumatic",
+                    "fuelType": "Diesel"
+                  }
+                },
+                {
+                  "id": "DFK-402",
+                  "name": "Komatsu FD70T-8",
+                  "productFilters": {
+                    "liftingCapacity": 7,
+                    "liftHeight": 5.5,
+                    "tireType": "Solid",
+                    "fuelType": "Diesel"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Earthmoving Equipment",
+      "categories": [
+        {
+          "name": "Excavators",
+          "subCategories": [
+            {
+              "name": "Mini Excavators",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Operating Weight",
+                  "unit": "ton",
+                  "min": 1,
+                  "max": 6
+                },
+                {
+                  "type": "range",
+                  "label": "Dig Depth",
+                  "unit": "m",
+                  "min": 2,
+                  "max": 5
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Track Type",
+                  "options": [
+                    "Rubber",
+                    "Steel"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Engine Power",
+                  "options": [
+                    "15–30 HP",
+                    "30–50 HP"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "EXC-MINI-101",
+                  "name": "Bobcat E35 Mini Excavator",
+                  "productFilters": {
+                    "operatingWeight": 3.5,
+                    "digDepth": 3.1,
+                    "trackType": "Rubber",
+                    "enginePower": "30–50 HP"
+                  }
+                },
+                {
+                  "id": "EXC-MINI-102",
+                  "name": "Kubota U27-4",
+                  "productFilters": {
+                    "operatingWeight": 2.7,
+                    "digDepth": 2.8,
+                    "trackType": "Steel",
+                    "enginePower": "15–30 HP"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Crawler Excavators",
+              "filters": [
+                {
+                  "type": "range",
+                  "label": "Operating Weight",
+                  "unit": "ton",
+                  "min": 10,
+                  "max": 50
+                },
+                {
+                  "type": "range",
+                  "label": "Dig Depth",
+                  "unit": "m",
+                  "min": 5,
+                  "max": 10
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Fuel Type",
+                  "options": [
+                    "Diesel"
+                  ]
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Boom Type",
+                  "options": [
+                    "Mono",
+                    "Two-piece"
+                  ]
+                }
+              ],
+              "products": [
+                {
+                  "id": "EXC-CRAWL-201",
+                  "name": "CAT 320 GC Crawler Excavator",
+                  "productFilters": {
+                    "operatingWeight": 20,
+                    "digDepth": 6.7,
+                    "fuelType": "Diesel",
+                    "boomType": "Mono"
+                  }
+                },
+                {
+                  "id": "EXC-CRAWL-202",
+                  "name": "Komatsu PC210LC-11",
+                  "productFilters": {
+                    "operatingWeight": 22.1,
+                    "digDepth": 6.8,
+                    "fuelType": "Diesel",
+                    "boomType": "Two-piece"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
