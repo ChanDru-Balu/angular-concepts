@@ -6,10 +6,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-side-menu',
-  imports: [MatExpansionModule, MatTabsModule, MatSliderModule, MatCheckboxModule, CommonModule],
+  imports: [MatExpansionModule, MatTabsModule, MatSliderModule, MatCheckboxModule, CommonModule , MatTooltipModule],
   templateUrl: './side-menu.component.html',
   styleUrl: './side-menu.component.scss',
   // encapsulation: ViewEncapsulation.None
@@ -18,6 +19,7 @@ export class SideMenuComponent implements OnInit {
 
   @Input() cat: any;
   @Output() updateCategory = new EventEmitter();
+  @Output() appliedFilter = new EventEmitter();
 
   panelOpenState: boolean = false;
   subCategoryOpen: boolean = false;
@@ -98,7 +100,7 @@ export class SideMenuComponent implements OnInit {
 
   applyFilter() {
 
-
+    this.appliedFilter.emit(this.filterObject)
     this.selectedCategory.products = this.selectedCategory.products.filter((product: any) => {
       for (let key in product.productFilters) {
         for (let customKey in this.filterObject) {

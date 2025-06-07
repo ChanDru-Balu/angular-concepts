@@ -1,6 +1,7 @@
-<div class="title">{{products.name  }} <span> ( {{products.products.length}} Types Available) </span></div>
+<div class="title fs-24">{{products.name  }} <span class="fs-14"> ( {{products.products.length}} Types Available) </span></div>
 
-<div class="product" *ngFor="let product of paginatedProducts">
+<div class="product" *ngFor="let product of paginatedProducts" (click)="selectProduct(product)" 
+    [ngClass]="{'selected-product': (this.selectedProduct?.id == product?.id )}">
     <div class="product-details">
         <div class="image">
             <img src="assets/images/product-catalog-image1.png" alt="" class="product-image">
@@ -8,12 +9,24 @@
         <div class="details">
             <div class="header">
                 <div class="subtitle fs-12 secondary ">Cat Code: {{product.id}}</div>
-                <div class="title fs-18 black-cl ">{{product.name}}</div>
+                <div class="fs-18 black-cl product-name">{{product.name}}</div>
             </div>
             <div class="metrics">
-                <div class="key">Platform size: 64"X20*</div>
-                <div class="key">Weight: 36kg</div>
-                <div class="key">Power Source : {{product.productFilters?.fuelType}}</div>
+                <div class="key-value">
+                    <div class="key">Platform size </div>
+                    <div class="value">: 64"X20*</div>
+                </div>
+
+                  <div class="key-value">
+                    <div class="key">Weight </div>
+                    <div class="value">: 36kg</div>
+                </div>
+
+                  <div class="key-value">
+                    <div class="key">Power Source </div>
+                    <div class="value">: {{product.productFilters?.fuelType}}</div>
+                </div>
+               
             </div>
         </div>
 
@@ -27,5 +40,7 @@
 <mat-paginator #paginator [length]="products.products.length"
               [pageSize]="10"
               [pageSizeOptions]="[5, 10, 25, 100]"
-              aria-label="Select page">
+              label=""
+              aria-label="Select page"
+              >
 </mat-paginator>

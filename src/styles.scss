@@ -1,5 +1,21 @@
+@use '@angular/material' as mat;
+
 @import url('./styles/font-size.scss');
 // @import url('assets/fonts/Poppins-Regular.ttf');
+
+
+$my-theme: mat.define-theme(
+  $config: (
+    typography: (
+      plain-family: '"Poppins", sans-serif',
+      brand-family: '"Poppins", sans-serif',
+    ),
+  ),
+);
+
+:root {
+  @include mat.all-component-typographies($my-theme);
+}
 
 @font-face {
     font-family: Poppins;
