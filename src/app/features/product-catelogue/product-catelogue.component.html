@@ -11,6 +11,8 @@
     <div class="product-page-details">
         @if (productsLists) {
             <app-product #prodChild [products]="productsLists" ></app-product>
+        } @else {
+            <p>Need to select a category...</p>
         }
     </div>
 
